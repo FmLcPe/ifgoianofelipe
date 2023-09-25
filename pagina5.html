@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style>
+        *{
+            color:rgb(126, 70, 2);
+            font-family:Helvetica;
+        }
+        li{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            text-align: justify;
+        }
+        a {
+            text-align: right;
+        }
+
+        a img {
+            width: 50px;
+        }
+
+        h1,h2,h3{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Programação Web - O que é CSS</h1>
+    <p>
+        Embora o CSS (Cascading Style Sheets ou Folha de Estilos em Cascata), assim como o HTML, não seja uma linguagem de programação, um  bom profissional da área de WebDesigner deve entender muito bem o que é CSS e como e quando ele é utilizado na elaboração das páginas Web. Vamos apresentar então um mini tutorial CSS.
+    </p>
+    <h2>O que é o CSS e por que ele existe?</h2>
+    <dl>
+            <dd>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na linguagem de marcação (HTML ou XML) devem ser apresentados em termos de formatação, de layout. Em um cenário ideal, enquanto o HTML é usado para estruturar os conteúdos, o CSS é utilizado para formatá-los. Dessa forma há uma enorme integração entre o HTML e o CSS.</dd><br>
+            <dd>No inicio da Internet, apenas o HTML era utilizado na elaboração das páginas Web, com o tempo e a necessidade de mais alternativas de formatação dessas páginas, foram criadas novas tags e atributos de estilo no HTML para que ele pudesse atender essas necessidades de layout, passando a cumprir tanto a função de estruturação quanto a de apresentação. Porém, isto começou a criar um problema para os Web Designers pois não havia como definir um padrão que se aplicasse a todas as páginas, qualquer alteração tinha que ser aplicada em cada uma delas, tornando o desenvolvimento muito complexo principalmente em grandes portais.</dd>
+    </dl>
+    <img src="img/css.png" title="Comparação CSS e HTML">
+    <p>Para solucionar essas dificuldades foi criado o CSS, que passou a ser utilizado especificamente para definir a formatação de um documento e suas características de apresentação como cores, fontes, alinhamento e etc. O CSS também trouxe a possibilidade de compartilhamento do formato, aonde uma mesma definição de layout pode ser aplicada a várias páginas, aumentando a flexibilidade e reduzindo a repetição de código. O HTML volta então à sua função essencial, estruturar os conteúdos.</p>
+    <h2>Principais Benefícios do CSS</h2>
+    <h3>Podemos então listar as seguintes grandes vantagens da aplicação do CSS:</h3>
+    <ul>
+        <li>
+            Possibilidade do controle do layout de vários documentos a partir de um único arquivo CSS
+        </li>
+        <li>
+            Aplicação de layouts diferentes de acordo com o dispositivo utilizado, possibilitando o layout responsivo
+        </li>
+        <li>
+            Possibilidade de manter a mesma formatação em diferentes navegadores
+        </li>
+        <li>
+            Aplicação de técnicas mais sofisticadas de desenvolvimento
+        </li>
+        <li>
+            Menor consumo de banda e melhor desempenho devido ao reuso do mesmo código de formatação em várias páginas
+        </li>
+    </ul>
+    <h2>Como o CSS é integrado com o HTML?</h2>
+    <p>Há diferentes maneiras de aplicar a formatação do CSS dentro do HTML, vamos a alguns exemplos bem simples:</p>
+    <ol>
+        <li>O Atributo Style</li>
+        <p>Nesse caso, é utilizado o atributo Style dentro da tag Body do HTML. Por exemplo:</p>
+    </ol>
+    <fieldset>    <pre class="wp-block-preformatted">&lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;O que é CSS&lt;/title&gt;
+            <strong>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</strong>
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Esse é um exemplo de documento HTML&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</pre></fieldset>
+            <li>A Tag Style</li>
+            <p>Aqui é utilizada tag CSS style para definição da formatação, não um atributo dentro da tag body.</p>
+        </ol>
+        <fieldset>
+            <pre class="wp-block-preformatted">&lt;html&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                &lt;head&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &lt;title&gt;Exemplo Linguagem CSS&lt;/title&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>        &lt;style type="text/css"&gt;</strong> 
+            <strong>            body {background-color: #00BFFF;}
+            </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&lt;/style&gt; </strong>&nbsp;&nbsp; &nbsp; 
+                &lt;/head&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    &lt;p&gt;Este é um exemplo de página com formatação&lt;/p&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+                &lt;/body&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &lt;/html&gt;</pre>
+        </fieldset>
+        <br>
+        <a href="index.html"><p align="right"><img src="img/voltar.png" width="50"></a>
+</body>
+</html>
